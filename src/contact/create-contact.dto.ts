@@ -8,6 +8,7 @@ export class CreateContactDto {
 
 
     @Length(1, 10)
+    @IsString()
     phone: string;
 
     @IsString()
