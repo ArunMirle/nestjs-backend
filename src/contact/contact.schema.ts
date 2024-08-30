@@ -1,4 +1,4 @@
-// contact.schema.ts
+
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
@@ -10,10 +10,10 @@ export class Contact {
     email: string;
 
     @Prop()
-    phone: string;
+    phoneNumber?: string;
 
     @Prop()
-    query: string;
+    query?: string;
 }
 
 export const ContactSchema = SchemaFactory.createForClass(Contact);
